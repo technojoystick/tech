@@ -1,0 +1,45 @@
+doctype html
+html
+	head
+		title test
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto")
+		link(rel='stylesheet' href='styles/main.css')
+	body
+		section.page
+			.page__unit
+				form.login-form
+					a(href='#').login-form__close
+					.login-form__wrap
+						.login-form__row.login-form__row_avatar
+							.login-form__avatar(style="background-image: url('images/avatar.jpg')")
+						.login-form__row.login-form__row_email
+							.login-form__input
+								.input
+									.input__icon
+										img(src='images/man.png' alt='')
+									input(type='email').input__unit
+						.login-form__row.login-form__row_pass
+							.login-form__input
+								.input
+									.input__icon
+										img(src='images/key.png' alt='')
+									input(type='password').input__unit
+						.login-form__row.login-form__row_link
+							.login-form__link
+								a(href='#') Forgot your password?
+						.login-form__row
+							.login-form__controls
+								label.checkbox
+									input(type='checkbox')
+									.checkbox__controls
+										.checkbox__view
+										.checkbox__toggler
+									span.checkbox__label Remember?
+								button.btn(type='submit') Sign In
+				.login-link
+					p Not a registered user yet? 
+						a(href='#') Sign up now!
+
+		//- script(href='../vendor/jquery.min.js')
+		script(src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js")
+		script(src='js/script.min.js')
