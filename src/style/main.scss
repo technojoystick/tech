@@ -34,11 +34,15 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	
+	&__unit {
+	    	width: 100%;
+		max-width: 350px;
+	}
 }
 
 .login-form {
-	width: 350px;
-	max-width: 100%;
+	width: 100%;
 
 	background-color: white;
 	border: 1px solid #e0e0e0;
